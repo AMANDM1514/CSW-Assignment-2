@@ -1,0 +1,31 @@
+<!-- Q3) Add a <div> element and an image element. Write "My Special Div" as inline text inside the <div> 
+    like <div>My Special Div</div>. Change the text color of the <div> 
+    when the user moves the mouse over the image, and change it back when the user moves the mouse out of the image. -->
+
+
+<DOCTYPE! html>
+<html>
+    <head>
+        <title>Assignment-3</title>
+        <style>
+            .contain{
+            display: inline-block;
+        }
+            #special{
+                color: blue;
+                font-size: 20px;
+                
+            }
+            .contain:hover #special{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contain">
+            <div id="special">My Special Div</div>
+                <img src="https://lh3.googleusercontent.com/p/AF1QipMFkgVeznbP2tiplgnqWXBYvQmdUCFhsC7S_l9j=s1360-w1360-h1020" alt="ITER-SOA" height="70%" width="70%">
+        </div>
+        
+    </body>
+</html>

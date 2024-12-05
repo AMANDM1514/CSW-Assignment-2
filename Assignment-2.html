@@ -1,0 +1,54 @@
+<!-- Q2) Imagine you are designing a webpage for a product display. You want to style the product container using the CSS box model.
+The product container should have a content width of 400px, padding of 20px on all sides, a border of 10px, and a margin of 15px around it.
+Inside this container, place an image of the product along with a brief description.
+Arrange three products in a row and ensure that the images and descriptions are properly aligned within each container. -->
+
+
+<DOCTYPE! html>
+<html>
+    <head>
+        <title>Asignment-2</title>
+        <style>
+            .product-container{
+                width: 400px;
+                padding: 20px;
+                border: 10px solid rgb(180, 178, 189);
+                margin: 15px;
+                text-align: center;
+            }
+            .product-row{
+                display: flex;
+                justify-content: space-between;
+            }
+            .product-container{
+                width: 50%;
+                height: auto;
+            }
+            .p{
+                font-size: 16px;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="product-row">
+            <div class="product-container">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/a/v/j/-original-imah4aehpbyrvnvs.jpeg?q=70" alt="Addids shoe." height="400px" width="350px">
+                <p>Light Weight Flexible & Breathable Battle Mesh. Branding Welding With A Beautiful Effect Enhancing The Visual Appeal Of The Shoe. 
+                    Three Stripes Branding With Non Sew Synthetic Material , Increasing Beauty Of Product.</p>
+            </div>
+            <div class="product-container">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/x/5/2/-original-imah4jywyma4j8vy.jpeg?q=70" alt="Iphone 16 pro.">
+                <p>
+                    Triple Camera Setup: 48MP Fusion Camera (Focal Length: 24 mm, f/1.78 Aperture), Second Generation Sensor Shift 
+                    Optical Image Stabilization, 100% Focus Pixels, Support for Super High Resolution Photos (24MP and 48MP).</p>
+            </div>
+            <div class="product-container">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/speaker/l/l/3/-original-imah3h9u2jpjyfr2.jpeg?q=70" alt="Marshell speaker.">
+                <p>This Marshall Kilburn II audio speaker, with its clear sound quality, can add more fun to your parties and outings. It is portable 
+                    and easy to carry. It is equipped with multi-host functionality which lets you connect and switch between two Bluetooth devices.</p>
+            </div>
+
+        </div>
+    </body>
+</html>

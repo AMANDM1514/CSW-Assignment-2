@@ -1,0 +1,152 @@
+<!-- Q10) Create a registration page that features the SOA logo centered on the page, along with form elements including text input fields, 
+a password field, an email field, a radio button, a dropdown list, and a submit button. Additionally, apply CSS to style each form element for a better appearance. -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment-10</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #89f7fe, #66a6ff);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+            height:150px;
+            width:150px;
+        }
+         
+        .container {
+            width: 400px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .container h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 90%;
+            height:20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+         .form-group select{
+          	width: 90%;
+            height:30px;
+            padding: 0px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+         }
+
+        .form-group input[type="radio"] {
+            width: auto;
+            display: inline-block;
+            
+        }
+
+        .form-group .radio-label {
+            margin-right: 15px;
+            color: #333;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            
+        }
+
+        .submit-btn:hover {
+            background-color: #4cae4c;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Student Registration Form</h2>
+        <form action="#">
+            <center>
+                <img src="C:\Users\Aman Dev\Desktop\CSW2\soa.jpg" alt="SOA Logo" class="logo">
+            </center>
+            
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <label class="radio-label" for="men">
+                    <input type="radio" id="men" name="gender" value="male" required> Male
+                </label>
+                <label class="radio-label" for="women">
+                    <input type="radio" id="women" name="gender" value="female"> Female
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Select Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">--Select a course--</option>
+                    <option value="computer-science">Computer Science</option>
+                    <option value="mathematics">Mathematics</option>
+                    <option value="physics">Physics</option>
+                    <option value="chemistry">Chemistry</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>    
+        </form>
+    </div>
+
+</body>
+</html>

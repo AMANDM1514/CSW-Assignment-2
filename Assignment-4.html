@@ -1,0 +1,25 @@
+<!-- Q4) Add an image as the background of a <div> element and change the image source when the user hovers the mouse over the image. In other words, 
+    when the user moves the mouse pointer over the image, the background image should change. -->
+
+
+<DOCTYPE! html>
+<html>
+    <head>
+        <title>Assignment-4</title>
+        <style>
+            .picture{
+                height:500px;
+                width: 700px;
+                background-size: cover;
+                background-image: url('https://img.freepik.com/premium-photo/mountain-lake-with-reflection-trees-mountains-background_583952-93299.jpg?semt=ais_hybrid');
+            }
+            .picture:hover{
+                background-image:url('https://img.freepik.com/free-photo/lake-mountains_1204-502.jpg');
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="picture"></div>
+    </body>
+</html>
